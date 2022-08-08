@@ -1,0 +1,202 @@
+<!-- DEMO CODES -->
+
+<meta name='viewport' content='user-scalable=0,width=device-width'/>
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>CSS Accordion Slider</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    .accordion {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion-select {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.accordion-title {
+    position: relative;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border: 1px solid transparent;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.accordion-title span {
+    bottom: 0px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.accordion-content {
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+    transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/* Generated styles starts here */
+
+.accordion {
+    border-color: #dedede;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: column;
+    height: auto;
+} 
+
+.accordion-title,
+.accordion-select  {
+    background-color: #0000ff;
+    color: #ffffff;
+    width: 100%;
+    height: 66px;
+    font-size: 15px;
+}
+
+.accordion-select {
+    margin-bottom: -66px;
+    margin-right: 0;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border-bottom-color: #eaeaea;
+    border-right-color: transparent;
+} 
+
+.accordion-select:hover + .accordion-title,
+.accordion-select:checked + .accordion-title {
+    background-color: #0000ff;
+} 
+
+ .accordion-title span  {	
+    transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    padding-left: 33px;
+    padding-right: 33px;
+    line-height: 66px;
+} 
+
+.accordion-content {
+    background-color: #f7f7f7;
+    color: #7f8787;
+    height: 280px;
+    margin-bottom: -275px;
+    margin-right: 0;
+    padding: 20px;
+    width: 100%;
+} 
+</style>
+</head>
+<body>
+     <div class="accordion">
+     <input type="radio" name="select" class="accordion-select" checked />
+    <div class="accordion-title"><span>NIALANG GARAGE,YOUTUBE</span></div>
+    <div class="accordion-content"><iframe class="embed-responsive-item" src="//www.youtube.com/embed/VnUsmQG9VmM" allowfullscreen></iframe>
+
+<iframe class="embed-responsive-item" src="//www.youtube.com/embed/gV6B8j7gRmE" allowfullscreen></iframe>
+
+<iframe class="embed-responsive-item" src="//www.youtube.com/embed/IdndukVwC4k" allowfullscreen></iframe>></div>
+
+         <input type="radio" name="select" class="accordion-select" />
+    <div class="accordion-title"><span>NIALANG GARAGE,PROTIUM</span></div>
+    <div class="accordion-content"><img src="//img.webme.com/pic/a/anmediapro/fc700b320fc0d89b292ce4989e26d3f1.png" alt="" /></div>
+         <input type="radio" name="select" class="accordion-select" />
+    <div class="accordion-title"><span>lihat NIALANG GARAGE DI ONLINE SHOPE</span></div>
+    
+    
+    <div class="accordion-conten"><a href="https://shope.ee/6pO527n7b8">clik disini untuk lihat nialang.garage di shopee</a></div>
+</div> 
+</div> 
+</body>
+</html> 
+ <style>@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+html, button{
+	font-family: Quicksand, sans-serif;
+}
+
+body{
+	background: white;
+	color:#555;
+	text-align: center;
+}
+
+.logo{
+	margin-top:30%;
+	font-size:30px;
+	font-weight:normal;
+}
+
+.brackets{
+	font-family: Advent Pro, sans-serif;
+}
+
+.left{
+	color:tomato;
+}
+
+.right{
+	color:dodgerblue;
+}
+
+.sample{
+	padding:20px;
+	font-size:18px;
+	background: inherit;
+	color:inherit;
+}
+
+#button{
+	margin-top:10px;
+	background:dodgerblue;
+	color:white;
+	width:80%;
+	height:80px;
+	font-size: 20px;
+	outline: none;
+	border:5px solid deepskyblue;
+	border-radius: 5px;
+}
+
+#button:active{
+	transform: scale(0.95);
+}</style> <script>function changeTheme(){
+	if(document.getElementById('button').innerHTML==='Dark Theme'){
+		document.body.style.background='#555';
+		document.body.style.color='white';
+		document.getElementById('button').innerHTML='Light Theme';
+	}
+	else{
+		document.body.style.background='white';
+		document.body.style.color='#555';
+		document.getElementById('button').innerHTML='Dark Theme';
+	}
+}</script>
